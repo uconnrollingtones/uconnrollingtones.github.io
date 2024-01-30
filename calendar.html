@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Google Calendar</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Optional: Remove scroll bars on the browser window */
+        }
+
+        .calendar-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calendar-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Removing the border */
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=c_d755dac5a28a35b29d3de03ca439ef864248e7901bea4dab81aa6ad292e55bf3%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" frameborder="0" scrolling="no"></iframe>
+    </div>
+</body>
+</html>
